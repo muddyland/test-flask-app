@@ -10,7 +10,7 @@ export GUNICORN_BIND_ADDRESS=0.0.0.0:5000
 echo Running in $(pwd)
 
 echo Starting Web Server
-/usr/bin/python3 -m gunicorn -b $GUNICORN_BIND_ADDRESS $FLASK_APP & 
+/usr/local/bin/python -m gunicorn -b $GUNICORN_BIND_ADDRESS $FLASK_APP & 
 
 while true; do
 
