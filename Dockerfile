@@ -13,4 +13,4 @@ EXPOSE 5000
 ENV FLASK_APP=main:app
 ENV GUNICORN_BIND_ADDRESS=0.0.0.0:5000
 
-CMD ["python", "-m", "gunicorn", "-b", "$GUNICORN_BIND_ADDRESS" "$FLASK_APP"]
+CMD ["python", "-m", "gunicorn", "-b", "$GUNICORN_BIND_ADDRESS", "$FLASK_APP"]
